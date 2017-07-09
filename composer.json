@@ -1,0 +1,39 @@
+{
+	"name": "raphievila/basicsubscription",
+	"version": "v1.0.0",
+	"description": "Unofficial Basic subscription php component for Mailgun api using CURL engine.",
+	"authors":[
+		{
+			"name": "Rafael Vilá",
+			"email": "rvila@revolutionvisualarts.com",
+			"homepage": "https://revolutionvisualarts.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "rvila@revolutionvisualarts.com",
+		"forum": "http://designersgate.com"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/raphievila/basicsubscription.git",
+			"reference": "master"
+		}
+	],
+	"license": "GPL-3.0",
+	"require": {
+		"php": "^5.3 || ^7.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"BasicMailgun\\": "src/",
+			"Vendor\\BasicMailgun\\": ""
+		},
+		"classmap": [ "src/" ]
+	},
+	"config": {
+		"github-protocols": ["git", "https", "http"]
+	},
+	"minimum-stability": "dev || stable"
+}
