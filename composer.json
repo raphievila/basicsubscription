@@ -35,5 +35,5 @@
 	"config": {
 		"github-protocols": ["git", "https", "http"]
 	},
-	"minimum-stability": "dev || stable"
+	"minimum-stability": "stable"
 }
