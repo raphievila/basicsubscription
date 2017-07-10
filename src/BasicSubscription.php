@@ -32,8 +32,8 @@ class BasicSubscription {
         $ini = parse_ini_file("config/mg.ini", TRUE);
         $json = json_encode($ini);
         self::$ini = json_decode($json);
-        self::$pubkey = self::$ini->keys->public_key;
-        self::$secret = self::$ini->keys->secret_key;
+        self::$pubkey = self::$ini->keys->public;
+        self::$secret = self::$ini->keys->secret;
         self::$domain = self::$ini->http->domain;
         self::$api = self::$ini->http->api;
         self::$user = self::$ini->api->user;
